@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="reward.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.png" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index">Home</a></li>
+                <li><a href="shop">Shop</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li id="lg-bag"><a href="reward" class="active">
+                        <%=locals.token.token%> <i class="far fa-coin"></i>
+                    </a></li>
+                <li id="lg-bag"><a href="cart"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a href="user"><i class="far fa-user"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart"><i class="fas fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="user">
+        <section class="py-5 my-5">
+            <div class="container">
+                <div class="bg-white shadow rounded-lg d-block d-sm-flex">
+                    <div class="profile-tab-nav border-right">
+
+                        <div class="p-4">
+                            <div class="img-circle text-center mb-3">
+                                <h3 class="mb-4" style="text-align: center; padding: 5px;"><b>Token</b></h3>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTApd7TCMCKbb8BslKEujejpCI_ijI5LqV1Q&usqp=CAU"
+                                    alt="Image" class="shadow">
+                            </div>
+                            <h4 class="text-center">
+                                <%=locals.token.token%>
+                            </h4>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="rewardshop"><button class="btn btn-primary">Redeem</button></a>
+                        </div>
+                    </div>
+                    <div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="account" role="tabpanel"
+                            aria-labelledby="account-tab" style="background-color: darkgray; padding: 4px;">
+                            <h3 class="mb-4" style="margin-bottom: 8px;">Transaction History</h3>
+                            <% locals.item.forEach(item=> { %>
+
+                                
+                                <% }); %>
+                                    <!-- <div style="background-color:white; height: 35px; padding: 8px; margin: 5px;">bought
+                                        69
+                                        condom</div> -->
+                        </div>
+                        <div style="background-color:white; height: 35px; padding: 8px; margin: 5px; width: 72%; float: left; border: 1px solid black;">
+                            Cartoon Astronaut T-shirts
+                        </div>
+                        <div
+                            style="width: 20%; float: left; height: 35px; padding: 8px; margin: 5px; border: 1px solid black; text-align: center; color: green;">
+                                    +2<i class="far fa-coin"
+                                    style="color: rgba(255, 213, 0, 0.97);"></i>
+                        </div>
+                        <div style="background-color:white; height: 35px; padding: 8px; margin: 5px; width: 72%; float: left; border: 1px solid black;">
+                            Cartoon Astronaut T-shirts
+                        </div>
+                        <div
+                            style="width: 20%; float: left; height: 35px; padding: 8px; margin: 5px; border: 1px solid black; text-align: center; color: green;">
+                                    +1<i class="far fa-coin"
+                                    style="color: rgba(255, 213, 0, 0.97);"></i>
+                        </div>
+                        <div style="background-color:white; height: 35px; padding: 8px; margin: 5px; width: 72%; float: left; border: 1px solid black;">
+                            Cartoon Astronaut T-shirts
+                        </div>
+                        <div
+                            style="width: 20%; float: left; height: 35px; padding: 8px; margin: 5px; border: 1px solid black; text-align: center; color: green;">
+                                    +3<i class="far fa-coin"
+                                    style="color: rgba(255, 213, 0, 0.97);"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="logo.png" alt="">
+                <h4>Contact</h4>
+                <p> <strong>Address:</strong> 562 Nalasupara, Maharashtra, India</p>
+                <p> <strong>Phone:</strong> +91 111 300000/ +91 1000000000</p>
+                <p> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="pay/app.jpg" alt="">
+                    <img src="pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="pay/pay.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>© 2023, CodeDemon</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
